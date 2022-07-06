@@ -97,7 +97,9 @@ const FNacimiento = ({ day, setDay, month, setMonth, year, setYear }) => {
 				</Chat>
 			</ContainerOfChat>
 
-			{(day || month || year) && <Success>{`${day} ${month} ${year}`}</Success>}
+			{(day || month || year) && (
+				<Success>{`Fecha de nacimiento: ${day} ${month} ${year}`}</Success>
+			)}
 		</>
 	);
 };
@@ -144,6 +146,7 @@ const Seleccionador = styled.select`
 `;
 
 const ContainerOfChat = styled.div`
+	width: 23rem;
 	margin: 40px;
 `;
 

@@ -56,6 +56,7 @@ FMailNumber.propTypes = {
 
 const ContainerOfChat = styled.div`
 	margin: 40px;
+	width: 23rem;
 `;
 
 const ProfileImgBox = styled.img`
@@ -84,7 +85,6 @@ const SectionForm = styled.div`
 
 const TitlePerForm = styled.p`
 	font-weight: bold;
-	display: flex;
 `;
 
 const Success = styled.div`

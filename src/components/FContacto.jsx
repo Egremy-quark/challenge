@@ -54,7 +54,7 @@ const FContacto = ({
 
 			{(nombre || apellidoPaterno || apellidoMaterno) && (
 				<Success>
-					{`${nombre} ${segundoNombre} ${apellidoPaterno} ${apellidoMaterno}`}
+					{`Nombre: ${nombre} ${segundoNombre} ${apellidoPaterno} ${apellidoMaterno}`}
 				</Success>
 			)}
 		</>
@@ -74,7 +74,9 @@ FContacto.propTypes = {
 	setApellidoMaterno: PropTypes.any
 };
 
-const ContainerOfChat = styled.div``;
+const ContainerOfChat = styled.div`
+	width: 23rem;
+`;
 
 const ProfileImgBox = styled.img`
 	height: 55px;
