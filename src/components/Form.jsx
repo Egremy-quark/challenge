@@ -4,7 +4,6 @@ import Swal from 'sweetalert2';
 import FContacto from './FContacto';
 import FMailNumber from './FMailNumber';
 import FNacimiento from './FNacimiento';
-import { mediaQueries } from './Themes';
 import Title from './Title';
 
 //! Contacto almacenado en el sessionStorage
@@ -204,21 +203,7 @@ const Formulario = styled.form`
 	background-color: #ffffff;
 	border-radius: 5px;
 	border: none;
-
-	${mediaQueries(60)`
-        position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    /* bring your own prefixes*/
-	    transform: translate(-50%, -15%);
-	    display: flex;
-	    flex-direction: column;
-	    align-items: center;
-	    text-align: center;
-	    background-color: #ffffff;
-	    border-radius: 5px;
-	    border: none;
-  `};
+	width: 25rem;
 `;
 
 const Success = styled.div`
