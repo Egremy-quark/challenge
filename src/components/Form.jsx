@@ -41,6 +41,7 @@ const Form = () => {
 		Swal.fire('Buen trabajo!', 'Tu información ha sido almacenada', 'success');
 	};
 
+	console.log(contact);
 	return (
 		<Formulario onSubmit={handleSubmit}>
 			<Title />
@@ -83,10 +84,10 @@ export default Form;
 
 const useContactName = () => {
 	const [fullName, setFullName] = useState({
-		nombre: '' || contact.nombre,
-		segundoNombre: '' || contact.segundoNombre || '',
-		apellidoPaterno: '' || contact.apellidoPaterno,
-		apellidoMaterno: '' || contact.apellidoMaterno
+		nombre: '',
+		segundoNombre: '' || '',
+		apellidoPaterno: '',
+		apellidoMaterno: ''
 	});
 
 	const setNombre = nombre => {
