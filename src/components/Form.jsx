@@ -6,8 +6,8 @@ import FMailNumber from './FMailNumber';
 import FNacimiento from './FNacimiento';
 import Title from './Title';
 
-//! Contacto almacenado en el localStorage
-// const contact = JSON.parse(localStorage.getItem('informationUser'));
+//! Contacto almacenado en el sessionStorage
+// const contact = JSON.parse(sessionStorage.getItem('informationUser'));
 
 const Form = () => {
 	const {
@@ -24,25 +24,12 @@ const Form = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		// localStorage.setItem(
-		// 	'informationUser',
-		// 	JSON.stringify({
-		// 		nombre,
-		// 		segundoNombre: segundoNombre || null,
-		// 		apellidoPaterno,
-		// 		apellidoMaterno,
-		// 		mail,
-		// 		phone,
-		// 		day,
-		// 		month,
-		// 		year
-		// 	})
-		// );
+
 		sessionStorage.setItem(
 			'informationUser',
 			JSON.stringify({
 				nombre,
-				segundoNombre: segundoNombre || null,
+				segundoNombre: segundoNombre || '',
 				apellidoPaterno,
 				apellidoMaterno,
 				mail,
