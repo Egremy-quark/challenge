@@ -105,7 +105,6 @@ const SectionForm = styled.div`
 
 const TitlePerForm = styled.p`
 	font-weight: bold;
-	display: flex;
 `;
 
 const Success = styled.div`
