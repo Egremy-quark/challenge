@@ -7,7 +7,7 @@ import FNacimiento from './FNacimiento';
 import Title from './Title';
 
 //! Contacto almacenado en el localStorage
-const contact = JSON.parse(localStorage.getItem('informationUser'));
+// const contact = JSON.parse(localStorage.getItem('informationUser'));
 
 const Form = () => {
 	const {
@@ -24,7 +24,21 @@ const Form = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		localStorage.setItem(
+		// localStorage.setItem(
+		// 	'informationUser',
+		// 	JSON.stringify({
+		// 		nombre,
+		// 		segundoNombre: segundoNombre || null,
+		// 		apellidoPaterno,
+		// 		apellidoMaterno,
+		// 		mail,
+		// 		phone,
+		// 		day,
+		// 		month,
+		// 		year
+		// 	})
+		// );
+		sessionStorage.setItem(
 			'informationUser',
 			JSON.stringify({
 				nombre,
@@ -41,7 +55,6 @@ const Form = () => {
 		Swal.fire('Buen trabajo!', 'Tu información ha sido almacenada', 'success');
 	};
 
-	console.log(contact);
 	return (
 		<Formulario onSubmit={handleSubmit}>
 			<Title />
