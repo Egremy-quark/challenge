@@ -43,7 +43,7 @@ const TitleInBox = styled.div`
 const TextOfBox = styled.div`
 	display: flex;
 	flex-direction: column;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 `;
 
@@ -52,7 +52,7 @@ const SecondLine = styled.div`
 	display: flex;
 	align-items: center;
 	text-align: left;
-	font-size: 16px;
+	font-size: 14px;
 `;
 
 const ClipBoard = styled.img`
