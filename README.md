@@ -23,6 +23,6 @@ Acerca del proyecto:
 
 - Aplicación desarollada con Vite, ESLint, Prettier, para así mejorar la experiencia de desarrollo, tener un código más consistente, con menos fallas, y escalable.
 
+Correr Aplicación (Scripts):
 
-Correr Aplicación (Scripts): 
 - npm run dev

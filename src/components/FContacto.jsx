@@ -19,7 +19,7 @@ const FContacto = ({
 				<Chat>
 					<ProfileImgBox src={imgProfile} alt='profileImg' />
 					<SectionForm>
-						<TitlePerForm> ¿Cuál es tu nombre? </TitlePerForm>
+						<TitlePerForm> ¿Cuál es tu nombre??? </TitlePerForm>
 						<InputForm
 							type='text'
 							state={nombre}
